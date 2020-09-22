@@ -36,9 +36,9 @@
 \tagline{}
 %\photo{2.5cm}{BrunoAlves}
 \personalinfo{
-    \printinfo{\faBirthdayCake}{14th June 1999}\\
+    %\printinfo{\faBirthdayCake}{14th June 1999}\\
     \email{ mladenbasic99@gmail.com}\\
-    \phone{ (+381) 66 632 37 11}\\
+    %\phone{ (+381) 66 632 37 11}\\
     \location{ \ Belgrade, Serbia}\\
     \github{ github.com/basicskill}\\
     \linkedin{ linkedin.com/in/basic-mladen}\\
@@ -60,11 +60,11 @@
 %Experience 1
 %%%%%%%%%%%%%
 
-\cvevent{Petnica Science Center}{Assistant at Department of Applied Physics and Electronics}{September 2018 -- present}{Valjevo, Serbia}
+\cvevent{Assistant at Petnica Science Center}{Department of Applied Physics and Electronics}{2018 -- present}{Valjevo, Serbia}
 
 \begin{itemize}
     %\setlength{\itemindent}{0.5em}
-    \item   \small{Gave lecture in Linear Algebra}
+    \item   \small{Held lecture about Linear Algebra}
     \item   \small{Held workshops in Python programming, Physics Simulation and Digital Signal Processing}
     \item   \small{Supervised project in \textit{Hybrid Model for Sentence Completion}}
 \end{itemize}
@@ -75,29 +75,16 @@
 %Experience 2
 %%%%%%%%%%%%%
 
-\cvevent{Renesas MCU Rally}{Team member of Faculty's Robotics department}{October 2019 -- present}{Belgrade, Serbia}
+\cvevent{Member of ETF Robotics group}{Renesas MCU Rally team}{2019 -- present}{Belgrade, Serbia}
 
 
 \begin{itemize}
     %\setlength{\itemindent}{0.5em}
-    \item   \small{Writing physics simulation of model vehicle with sensors and localization}
-    \item   \small{DC motor testing and measurement}
-    %\item   \small{\textit{MATLAB, Simulink}}
+    \item   \small{Wrote physics simulation of model vehicle with sensors and localization}
+    \item   \small{DC motor testing and measurement} \\
+    \smallskip
+    \cvtag{MATLAB} \cvtag{Simulink}
 \end{itemize}
-
-\divider
-%%%%%%%%%%%%%
-%Experience 3
-%%%%%%%%%%%%%
-
-\cvevent{Co-Founder of Applied Physics and Electronics Club}{Kraljevo Grammer School}{Sept 2017 -- June 2018}{Kraljevo, Serbia}
-
-\begin{itemize}
-    \item \small{Mentored and developed science fair projects using mostly \textit{Arduino} and \textit{Python}}
-    \item \small{\textit{Projects:} Automatic Checkers Table, Self Playing Guitar, Ball Chasing Robot}
-\end{itemize}
-
-\medskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Projects %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -106,6 +93,18 @@
 %%%%%%%%%%%%%
 %Project 1
 %%%%%%%%%%%%%
+\cvevent{Relative Camera Pose Estimation}{Petnica Science Center Machine Learning Seminar}{summer 2020}{Online}
+
+\begin{itemize}
+    \item \small{Wrote a model for estimating relative change in camera position between two frames}
+    \item \small{Model consisted of two siamese AlexNets and a fully connected layer which outputs relative translation and rotation}
+    \item \small{Treining was done on car driving dataset}
+    \\
+    \smallskip
+    \cvtag{Python} \cvtag{PyTorch} \cvtag{KITTI Dataset}
+\end{itemize}
+    
+\divider
 
 \cvevent{Automatic Extractive Summarization of Multiple Documents}{Petnica Science Center}{summer 2018}{Valjevo, Serbia}
 
@@ -113,7 +112,9 @@
   \item \small{Multi-document extractive summarization}
   \item \small{Text ranking done using Recursive Neural Networks}
   \item \small{Sentance selection done using ROUGE metric with greedy approach and linear programming}
-  %\item \small{\textit{Python, TesnorFlow}}
+  \\
+  \smallskip
+  \cvtag{Python} \cvtag{TesnorFlow} \cvtag{DUC Dataset}
 \end{itemize}
 
 \divider
@@ -124,13 +125,15 @@
 %Project 2
 %%%%%%%%%%%%%
 
-\cvevent{The Analysis of Ball Balancing Robot's Control System}{Petnica Science Center}{summer 2017}{Valjevo, Serbia}
+\cvevent{The Analysis of Ball Balancing Robot Control System}{Petnica Science Center}{summer 2017}{Valjevo, Serbia}
 
 \begin{itemize}
     \item \small{Simulation of robot's physics and imperfect sensors}
     \item \small{Signal filtering done using Complementary and Kalman filter}
     \item \small{System stabilization done using PID and LQR controller}
-    %\item \small{\textit{MATLAB, Python}}
+    \\
+    \smallskip
+    \cvtag{MATLAB} \cvtag{Python}
 \end{itemize}
 
 \divider
@@ -139,13 +142,15 @@
 %Project 3
 %%%%%%%%%%%%%
 
-\cvevent{Word Recognition using Gyroscope Signals}{Petnica Science Center}{summer 2016}{Valjevo, Serbia}
+\cvevent{Word Recognition from Gyroscope Signals}{Petnica Science Center}{summer 2016}{Valjevo, Serbia}
 
 \begin{itemize}
     \item \small{Built own database with gyrocsope recordings in different frequencies}
     \item \small{Gyroscope data recorded using \textit{MicroPIC} board}
     \item \small{Word recognition done using Dynamic Time Warping method}
-    %\item \small{\textit{MATLAB, MicroC}}
+    \\
+    \smallskip
+    \cvtag{MATLAB} \cvtag{MicroC}
 \end{itemize}
 
 \end{document}
