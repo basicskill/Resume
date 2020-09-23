@@ -15,6 +15,7 @@ jobs:
         run:
           git config --local user.email "action@github.com";
           git config --local user.name "GitHub Action";
+          mv main.pdf Basic_Mladen_Resume.pdf;
           git add Basic_Mladen_Resume.pdf;
           git commit -m "[automated] Compiled pdf";
       - name: Push changes
