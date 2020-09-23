@@ -1,0 +1,23 @@
+name: Build LaTeX document
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[automated]') && !contains(github.event.head_commit.message, '[meta]')"
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v1
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: source/main.tex
+      - name: Commit changes
+        run:
+          git config --local user.email "action@github.com";
+          git config --local user.name "GitHub Action";
+          git add Basic_Mladen_Resume.pdf;
+          git commit -m "[automated] Compiled pdf";
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
