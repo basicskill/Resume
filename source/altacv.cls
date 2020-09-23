@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{altacv}[2017/04/30 AltaCV v1.1.3, yet another alternative class for a résumé/curriculum vitae.]
+\ProvidesClass{altacv}
 
 %% v1.1: Optionally load academicons
 \newif\if@academicons
